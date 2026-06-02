@@ -1,0 +1,994 @@
+@import url('https://fonts.cdnfonts.com/css/golos-text');
+.noselect {
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE/Edge */
+  user-select: none; /* Стандартный синтаксис */
+}
+body {
+    margin: 0 auto;
+    background-color: white;
+}
+
+* {
+    font-family: 'Golos Text', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    border: 0 solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0.3vw 3vw #00000025;
+    width: 100%;
+}
+
+.navmenu {
+    border: 0.1vw solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 77%;
+}
+
+.logo {
+    width: 8vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    border: 0.1vw solid green;
+    gap: 2vw;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    font-size: 1vw;
+    text-wrap: nowrap;
+    border: 0.1vw solid red;
+    transition: all 0.5s ease;
+}
+
+nav a:hover li {
+    color: #077591;
+}
+
+.phone {
+    width: 2.4vw;
+}
+
+.phonebox {
+    display: flex;
+    align-items: center;
+}
+
+.phonebox a {
+    text-decoration: none;
+    color: black;
+    margin-left: 0.7vw;
+    font-size: 1vw;
+}
+
+.phonebox:hover .linkphone {
+    color: #ffffff;
+    height: 3.5vw;
+}
+
+.phonebox:hover .link2 {
+    opacity: 1;
+    font-size: 1.1vw !important;
+}
+
+.phonebox:hover .link1 {
+    font-size: 1.1vw;
+}
+
+.phonebox:hover .arr {
+    opacity: 0;
+}
+
+.linkphone {
+    transition: all 2.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.link2 {
+    opacity: 0;
+    font-size: 0vw !important;
+    transition: all 0.6s ease;
+}
+
+.namepage {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F0F0F0;
+    border-radius: 0.7vw;
+    height: 2.5vw;
+    font-size: 0.8vw;
+}
+
+.arr {
+    height: 1vw;
+    transition: all 0.5s ease;
+}
+
+/* ==========================================================================
+   3. ГЛАВНЫЙ ЭКРАН (HERO)
+   ========================================================================== */
+.hero {
+    background-color: #FCFCFC;
+    width: 100%;
+    border: 0 solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.heroless {
+    background-color: #FCFCFC;
+    border: 0 solid rgb(250, 5, 5);
+    width: 42%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 25vw;
+}
+
+.hero-but:hover {
+    background-color: #378991;
+}
+
+.main-text {
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: 'Golos Text', sans-serif;
+    border: 0 solid yellow;
+    width: 64%;
+}
+
+.sel {
+    color: #077591;
+}
+
+.hero-text {
+    font-size: 1vw;
+    margin-top: 0;
+    border: 0 solid yellow;
+    width: 70%;
+}
+
+.hero-img {
+    margin-left: 0;
+    width: 35%;
+    height: 30vw;
+    border: 0 solid rebeccapurple;
+}
+
+.hero-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-ul {
+    list-style: none;
+    border: 0 solid green;
+    padding-left: 0;
+    margin-left: 0;
+    width: 65%;
+    font-size: 1vw;
+}
+
+.hero-but {
+    width: 40%;
+    height: 3.5vw;
+    padding: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    font-family: 'Golos Text', sans-serif;
+    background-color: #016370;
+    color: white;
+    border-radius: 0.7vw;
+    font-weight: 100;
+    transition: all 0.5s ease;
+}
+
+/* ==========================================================================
+   4. БЛОК О НАС И КЕЙСЫ (ABOUTUS / OURCASE)
+   ========================================================================== */
+.aboutus {
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid gray;
+    padding: 5.2vw 11.6vw;
+}
+
+.chooseus {
+    font-size: 1vw;
+    border: 0px solid yellow;
+}
+
+.choosetext {
+    font-size: 1.6vw;
+    font-weight: 600;
+    padding-bottom: 5%;
+}
+
+.str {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1.5vw;
+}
+
+.str1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1.5vw;
+}
+
+.str img, .str1 img {
+    height: 1.5vw;
+}
+
+.str p, .str1 p {
+    margin: 0 auto;
+    margin-left: 0.5vw;
+    width: 80%;
+}
+
+.case {
+    background-color: white;
+    box-shadow: 0px 0px 23px -9px rgba(34, 60, 80, 0.48);
+    border-radius: 1vw;
+    width: 32%;
+    font-size: 1vw;
+}
+
+.caseimg1, .caseimg2, .caseimg3 {
+    width: 100%;
+    border-top-right-radius: 1vw;
+    border-top-left-radius: 1vw;
+    height: 10vw;
+}
+
+.caseimg1 img, .caseimg2 img, .caseimg3 img {
+    width: 100%;
+    height: 100%;
+    border-bottom: 0.06vw solid #CACACA;
+}
+
+.caseinfo {
+    padding-bottom: 5%;
+    border: 0px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #035F68;
+    font-weight: 600;
+}
+
+.casename {
+    width: 100%;
+    font-size: 0.8vw;
+    border: 0px solid darkorchid;
+    margin-left: 3%;
+}
+
+.caseinfo span {
+    font-size: 0.8vw;
+    border: 0px solid black;
+    border-radius: 3.2vw;
+    background-color: #EDEDED;
+    color: #035F68;
+    margin-left: 3%;
+    padding: 1.5%;
+}
+
+.casebut {
+    width: 30%;
+    border: 0.06vw solid #378991;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 2%;
+    border-radius: 0.7vw;
+    font-size: 1.3vw;
+    color: #378991;
+    transition: all 0.5s ease;
+}
+
+.casebut a {
+    color: #378991;
+    text-decoration: none;
+}
+
+.casebut:hover {
+    background-color: #378991;
+}
+
+.casebut:hover a {
+    color: white !important;
+}
+
+.ourcase {
+    border: 0px solid blue;
+    width: 74%;
+}
+
+.ourcase section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 0px solid orange
+}
+
+.ourcasetext {
+    font-size: 1.6vw;
+    font-weight: 600;
+    border: 0px solid black;
+    text-align: center;
+}
+
+/* ==========================================================================
+   5. УСЛУГИ, ЦЕНЫ И ФОРМА (OFFER-BLOCK)
+   ========================================================================== */
+.offer-block {
+    display: flex;
+    justify-content: center;
+    border: 0 solid red;
+    padding: 5.2vw 11.6vw;
+}
+
+.ourserv {
+    width: 20%;
+    color: white;
+    border-radius: 1vw;
+    padding: 0.1% 0.7%;
+    background: linear-gradient(to right bottom, #023E4C, #02757C)
+}
+
+.ourservtext {
+    width: 100%;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
+
+.services {
+    font-size: 0.8vw;
+}
+
+.price {
+    margin: 0 auto;
+    width: 58%;
+    background: linear-gradient(to right, #014752, #489F8B);
+    color: white;
+    border-radius: 1vw;
+    padding: 0.1% 0.7%;
+}
+
+.price-h {
+    font-weight: 500;
+    font-size: 1.3vw;
+    padding-left: 1.5%;
+}
+
+.contact {
+    color: white;
+    width: 18%;
+    background-image: url(backcont.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 1vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact p {
+    font-size: 1.3vw;
+    text-align: center;
+}
+
+.contact input {
+    font-size: 1vw;
+    width: 80%;
+    padding: 7% 5%;
+    margin-top: 5%;
+    border-radius: 0.7vw;
+    border: 0;
+}
+
+.mesop {
+    padding-bottom: 25% !important;
+}
+
+.but {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.but:hover button {
+    background-color: #0DA3B7;
+}
+
+.contact button {
+    font-size: 1vw;
+    border: 0;
+    margin-top: 6%;
+    background-color: #016370;
+    color: white;
+    width: 90%;
+    padding: 5%;
+    border-radius: 0.7vw;
+    transition: all 0.5s ease;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.servicebut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #ffffff 0.06vw solid;
+    background-color: white;
+    color: #026971;
+    border-radius: 0.7vw;
+    font-size: 1.1vw;
+    text-align: center;
+    margin-top: 20%;
+    padding: 3%;
+    transition: all 0.5s ease;
+}
+
+.servicebut:hover {
+    background-color: #F0F0F0;
+    padding: 5%;
+}
+
+.servicebut:hover a {
+    color: black !important;
+}
+
+.anservice {
+    margin-top: 5%;
+    font-size: 0.8vw;
+    text-align: center;
+}
+
+.pricename {
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+.price section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: white;
+    color: #025B65;
+    width: 27%;
+    padding: 0 2% 2%;
+    border-radius: 1vw;
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-1vw);
+}
+
+.cardstr1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1vw;
+}
+
+.cardstr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1vw;
+}
+
+.cardstr img {
+    height: 1.2vw;
+}
+
+.cardtext {
+    font-size: 1vw;
+    font-weight: 600;
+    border: 0 solid red;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.pricebut {
+    width: 80%;
+    border: 0.06vw solid #378991;
+    background-color: #016370;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 12%;
+    padding: 5%;
+    border-radius: 0.7vw;
+    font-size: 1vw;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.pricebut:hover {
+    background-color: #0DA3B7;
+}
+
+/* ==========================================================================
+   6. ДЕКОРАТИВНЫЕ ЛИНИИ И ДОПОЛНИТЕЛЬНЫЕ КАРТОЧКИ (ADDITIONAL)
+   ========================================================================== */
+h1 {
+    color: #3D8F7C;
+    text-align: center;
+}
+
+.linedev {
+    margin: 0 auto;
+    margin-top: 3%;
+    width: 77%;
+    height: 10vw;
+}
+
+.linedev img {
+    width: 100%;
+}
+
+.additional {
+    width: 77%;
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.additcard {
+    margin-top: 5%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #025A65AD;
+    padding-bottom: 1%;
+    border-radius: 1.3vw;
+    border: 0.2vw solid #9CA3A4;
+    box-shadow: 0px 0px 3.8vw -2.2vw rgba(34, 60, 80, 0.88);
+}
+
+.additname {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.additname p {
+    width: 55%;
+    font-size: 1.3vw;
+}
+
+.additinfo {
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: 100 !important;
+}
+
+.additstr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1.5vw;
+    width: 92%;
+}
+
+.additstr img {
+    height: 1.5vw;
+}
+
+.additstr p {
+    margin: 0 auto;
+    margin-left: 0.5vw;
+    width: 80%;
+}
+
+.additbut {
+    width: 80%;
+    border: 0.06vw solid #378991;
+    background-color: #016370;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 0.7vw;
+    font-size: 1vw;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.additbut:hover {
+    background-color: #077591;
+}
+
+/* ==========================================================================
+   7. ДОВЕРИЕ, КОМПЕТЕНЦИИ И СЛАЙДЕР ПАРТНЕРОВ (TRUST / SLIDER)
+   ========================================================================== */
+.trust-block {
+    display: flex;
+    justify-content: space-between;
+    width: 77%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.project {
+    background-image: url(proj.png);
+    background-size: cover;
+    border-radius: 1.3vw;
+    width: 35%;
+    padding: 1%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 15vw;
+}
+
+.projname {
+    font-size: 2vw;
+    width: 60%;
+}
+
+.projinfo {
+    font-size: 1vw;
+    width: 73%;
+}
+
+.projbut {
+    width: 40%;
+    background-color: white;
+    text-align: center;
+    padding: 2%;
+    border-radius: 0.7vw;
+    font-size: 1vw;
+    color: #026971;
+    margin-top: 3%;
+    transition: all 0.5s ease;
+}
+
+.projbut:hover {
+    background-color: #F0F0F0;
+}
+
+.projbut a {
+    text-decoration: none;
+    color: #026971;
+    transition: all 0.5s ease;
+}
+
+.projbut:hover a {
+    color: black;
+}
+
+.comptext {
+    width: 100%;
+    font-size: 2vw;
+    height: 10%;
+    margin-left: 7%;
+}
+
+.compbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 62%;
+}
+
+.comp {
+    width: 20%;
+    height: 70%;
+    padding-top: 0;
+    border-radius: 0.7vw;
+    border: 0.06vw solid #C0BEBE;
+}
+
+.inv {
+    display: none;
+}
+
+.compcase1, .compcase2, .compcase3, .compcase4, .compcase5, .compcase6, .compcase7 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bigphotobox {
+    position: fixed;
+    background-color: #d9d9d9b9;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: none;
+}
+
+.imgclose {
+    font-size: 4vw;
+    transition: all 0.3s ease;
+}
+
+.imgclose:hover {
+    color: rgb(110, 110, 110);
+}
+
+.bigimg {
+    margin: 0 auto;
+}
+
+.left, .right {
+    align-self: center;
+    width: 5%;
+    height: 14%;
+}
+
+.left:hover img, .right:hover img {
+    border: 0.06vw solid black;
+}
+
+.left img, .right img {
+    border-radius: 3.2vw;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+
+.trust {
+    width: 77%;
+    margin: 0 auto;
+}
+
+.trust img {
+    width: 100%;
+    height: 100%;
+    margin-top: 7%;
+}
+
+.cltext {
+    text-align: center;
+    font-size: 1.6vw;
+    margin: 5% auto 0 auto;
+}
+
+.slider {
+    width: 77%;
+    margin: 3% auto 0 auto;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    scrollbar-width: none; 
+    scroll-behavior: smooth; 
+    display: flex;         
+    justify-content: space-between; 
+}
+
+.slider::-webkit-scrollbar {
+    display: none; 
+}
+
+.slider.active {
+    scroll-behavior: auto;
+}
+
+.slide-item {
+    display: inline-flex;  
+    align-items: center;   
+    justify-content: center; 
+    width: 20%;         
+    min-width: 20%;     
+    height: 6.5vw;
+    box-sizing: border-box;
+    padding: 0;    
+    user-select: none;
+}
+
+.slider img {
+    width: 7.8vw;
+    height: 3.2vw;
+    object-fit: contain; 
+    pointer-events: none;
+}
+
+/* ==========================================================================
+   8. ПОДВАЛ САЙТА (FOOTER)
+   ========================================================================== */
+footer {
+    margin: 0 auto;
+    margin-top: 5.2vw;
+    padding-top: 2%;
+    background-color: #1B1B1B;
+    width: 100%;
+}
+
+.footer-info {
+    display: flex;
+    width: 77%;
+    margin: 0 auto;
+    border: 0 solid red;
+}
+
+.footer-textinfo {
+    border: 0 solid rgb(51, 255, 0);
+    color: #999999;
+    font-size: 1.3vw;
+    width: 40%;
+}
+
+.foot-text {
+    color: white;
+}
+
+.on {
+    color: #999999;
+}
+
+.serv {
+    width: 60%;
+}
+
+.footer-textinfo ul {
+    font-size: 1vw;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.footer-textinfo li {
+    padding-top: 0.7vw;
+}
+
+.footer-contact {
+    width: 60%;
+}
+
+.footphonebox {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1vw;
+    margin-top: 1.2vw;
+}
+
+.iconph {
+    border: 0 solid red;
+    width: 1.1vw;
+    height: 1.1vw;
+    padding-right: 0.6vw;
+}
+
+.iconem {
+    border: 0 solid red;
+    margin: 0 auto;
+    padding-right: 0.6vw;
+}
+
+.footphonebox span {
+    width: 100%;
+    border: 0 solid red;
+    font-size: 1.1vw;
+    font-weight: 300;
+}
+
+.emailbox {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.1vw;
+    margin-top: 1.3vw;
+    font-weight: 300;
+}
+
+.mapmarkbox {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.1vw;
+    margin-top: 1.2vw;
+    font-weight: 300;
+}
+
+.socialbox {
+    margin-top: 1.2vw;
+    border: 0 solid red;
+    display: flex;
+    height: 2.5vw;
+    gap: 3%;
+}
+
+.social {
+    background-color: #474747;
+    width: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3vw;
+}
+
+.social a {
+    width: 100%;
+    height: 100%;
+}
+
+.a1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vk, .tg, .wp {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.vk {
+    width: 100%;
+    height: 100%;
+    background-image: url(vk.png);
+}
+
+.tg {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    background-image: url(tg.png);
+}
+
+.wp {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    background-image: url(wp.png);
+}
+
+.social a:hover .vk, .social a:hover .tg, .social a:hover .wp {
+    opacity: 1;
+}
+
+.social img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
