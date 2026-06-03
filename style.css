@@ -269,20 +269,21 @@ nav {
 .str {
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 1.5vw;
+    line-height: 1.5vw;
 }
 
 .str1 {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 1.5vw;
 }
 
 .str img,
 .str1 img {
-    height: 1.5vw;
+    height: 1.4vw;
 }
 
 .str p,
@@ -381,6 +382,7 @@ nav {
     width: 92%;
     max-width: 1470px;
     margin: 0 auto;
+    gap: 1%;
     margin-top: 5%;
 }
 
@@ -427,26 +429,35 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 1vw;
+    padding: 0.1% 1% 2% 1%;
+    display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5vw;
     align-items: center;
 }
 
 .contact p {
-    font-size: 1.3vw;
+    font-size: 1vw;
     text-align: center;
+    padding-top: 0.7vw;
 }
 
 .contact input {
     font-size: 1vw;
     width: 80%;
-    padding: 7% 5%;
-    margin-top: 5%;
-    border-radius: 0.7vw;
+    height: auto;
+    padding: 1vw;
+    margin-top: 1vw;
+    border-radius: 0.4vw;
     border: 0;
+
 }
 
 .mesop {
     padding-bottom: 25% !important;
+    font-size: 0.8vw !important;
 }
 
 .but {
@@ -459,10 +470,10 @@ nav {
     background-color: #0DA3B7;
 }
 
-.contact button {
+.but button {
     font-size: 1vw;
     border: 0;
-    margin-top: 6%;
+    margin-bottom:0.8vw;
     background-color: #016370;
     color: white;
     width: 90%;
@@ -472,10 +483,12 @@ nav {
 }
 
 .form {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid red;
 }
 
 .servicebut {
@@ -486,16 +499,15 @@ nav {
     background-color: white;
     color: #026971;
     border-radius: 0.7vw;
-    font-size: 1.1vw;
+    font-size: 1vw;
     text-align: center;
     margin-top: auto;
-    padding: 3%;
+    padding: 5%;
     transition: all 0.5s ease;
 }
 
 .servicebut:hover {
     background-color: #F0F0F0;
-    padding: 5%;
 }
 
 .servicebut:hover a {
@@ -504,12 +516,12 @@ nav {
 
 .anservice {
     margin-top: 5%;
-    font-size: 0.8vw;
+    font-size: 0.7vw;
     text-align: center;
 }
 
 .pricename {
-    font-size: 1.3vw;
+    font-size: 1.2vw;
     font-weight: 600;
     margin-top: 0;
 }
@@ -529,7 +541,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
 
 .card:hover {
@@ -555,11 +567,12 @@ nav {
 }
 
 .cardtext {
-    font-size: 1vw;
+    font-size: 0.8vw;
     font-weight: 600;
     border: 0 solid red;
     margin: 0 auto;
     width: 100%;
+    white-space: wrap;
 }
 
 .pricebut {
@@ -571,7 +584,7 @@ nav {
     padding: 5%;
     border-radius: 0.7vw;
     font-size: 1vw;
-    margin-top: 10%;
+    margin-top: 5vw;
     color: white;
     transition: all 0.5s ease;
 }
@@ -1051,9 +1064,11 @@ footer {
     .heroless {
         margin-left: 2.5vw;
     }
-    .choosetext{
+
+    .choosetext {
         font-weight: 400;
     }
+
     .chooseus {
         margin-left: 2.5vw;
     }
@@ -1061,25 +1076,31 @@ footer {
     .ourcase {
         width: 71%;
     }
-    .ourcasetext{
+
+    .ourcasetext {
         font-weight: 400;
     }
-    .str1{
+
+    .str1 {
         font-size: 1.4vw;
         align-items: flex-start;
-        line-height: 1.4vw;
+        line-height: 1.9vw;
     }
-    .str{
+
+    .str {
         font-size: 1.4vw;
-        align-items: flex-start;
-        line-height: 1.4vw;
+        align-items: center;
+        line-height: 1.5vw;
     }
+
     .casename {
         font-size: 1.4vw;
     }
-    .marg{
+
+    .marg {
         margin-top: 1.7vw;
     }
+
     .caseinfo span {
         font-size: 1vw;
     }
@@ -1109,23 +1130,48 @@ footer {
     .phonebox:hover .link1 {
         font-size: 1.2vw;
     }
-    .services{
+
+    .services {
         font-size: 1.2vw;
     }
-    .ourservtext{
+
+    .ourservtext {
         font-size: 1.4vw;
     }
-    .price-h{
+
+    .price-h {
         font-size: 1.4vw;
     }
-    .pricename{
+
+    .pricename {
         font-size: 1.5vw;
     }
-    .cardtext{
-        font-size: 1.2vw;
+
+    .cardtext {
+        font-size: 1vw;
+        line-height: 1.8vw;
     }
-     .str img,.str1 img{
+    .cardstr img, .cardstr1 img {
         height: 1.7vw;
+    }
+
+    .str img,
+    .str1 img {
+        height: 1.7vw;
+    }
+    .contact{
+        gap:0;
+    }
+    .contact p{
+        font-size: 1.2vw;
+        padding-top:0.2vw;
+        
+    }
+    .contact input{
+        height: 2vw;
+    }
+    .form{
+        height: 30vw;
     }
 }
 
@@ -1141,47 +1187,61 @@ footer {
     .heroless {
         margin-left: 3.4vw;
     }
-    .hero-img{
+
+    .hero-img {
         margin-right: 3.4vw;
     }
+
     .choosetext {
         font-size: 4vw;
         font-weight: 400;
     }
-    .aboutus{
-        flex-direction:column-reverse;
+
+    .aboutus {
+        flex-direction: column-reverse;
     }
+
     .ourcasetext {
         font-size: 2vw;
         font-weight: 400;
     }
+
     .chooseus {
         width: 92%;
-        margin:0 auto;
+        margin: 0 auto;
         border: 1px solid red;
         margin-top: 3vw;
     }
-    .caseimg1,.caseimg2,.caseimg3{
+
+    .caseimg1,
+    .caseimg2,
+    .caseimg3 {
         height: 20vw;
     }
+
     .ourcase {
         width: 92%;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .str1{
+
+    .str1 {
         font-size: 3vw;
-        margin-top: 1vw;
+        margin-top: 2vw;
         line-height: 3vw;
     }
-    .str img,.str1 img{
+
+    .str img,
+    .str1 img {
         height: 3vw;
     }
+
     .str {
         font-size: 3.3vw;
-         margin-top: 3vw;
-         line-height: 3vw;
-         white-space: nowrap;
+        margin-top: 2vw;
+        line-height: 3vw;
+        white-space: nowrap;
     }
+
     .navmenu {
         justify-content: space-around;
         align-items: center;
@@ -1211,29 +1271,79 @@ footer {
     .namepage {
         display: none;
     }
-    .offer-block{
+
+    .offer-block {
         flex-direction: column;
     }
-    .ourserv{
+
+    .ourserv {
         width: 94%;
-        margin:0 auto;
+        margin: 0 auto;
     }
-    .ourservtext{
+
+    .ourservtext {
         font-size: 3vw;
     }
-    .services{
+
+    .services {
         font-size: 3vw;
         line-height: 4vw;
     }
-    .str img,.str1 img{
+
+    .str img,
+    .str1 img {
         height: 4vw;
     }
-    .servicebut{
+
+    .servicebut {
+        width: 65vw;
+        margin: 0 auto;
+        font-size: 3vw;
         margin-top: 4vw;
+    }
+
+    .anservice {
+        font-size: 2vw;
+    }
+
+    .price {
+        width: 94%;
+        margin: 0 auto;
+        margin-top: 5vw;
+    }
+    .price-h{
         font-size: 3vw;
     }
-    .anservice{
+    .pricename{
+        font-size: 2.4vw;
+    }
+    .cardtext{
+        font-size: 1.5vw;
+    }
+    .pricebut{
         font-size: 2vw;
+    }
+    .contact{
+        width: 94%;
+        margin: 0 auto;
+        margin-top: 5vw;
+    }
+    .contact p{
+        font-size: 2vw;
+    }
+    .contact input{
+        font-size: 1.7vw;
+        border-radius: 0.7vw;
+    }
+    .mesop{
+        font-size: 1.7vw !important; 
+        padding-bottom: 7vw !important;
+    }
+    .but button{
+        width: 70vw;
+        padding: 2vw;
+        font-size: 2vw;
+        margin-top: 5vw;
     }
 }
 
@@ -1271,13 +1381,15 @@ footer {
         font-size: 1.8vw;
         border-radius: 0.6vw;
     }
-    .casename{
+
+    .casename {
         font-size: 2vw;
     }
-    .caseinfo span{
+
+    .caseinfo span {
         font-size: 1.5vw;
     }
-   
+
     .navmenu {
         justify-content: space-around;
         align-items: center;
