@@ -1070,20 +1070,54 @@ footer {
     }
 
     .arr {
-        height: 2vw;
+        height: 3vw;
     }
 
     .phonebox a {
-        font-size: 1.8vw;
+        font-size: 2vw;
     }
         .phonebox:hover .link2 {
-        font-size: 1.4vw !important;
+        font-size: 2vw !important;
     }
     .phone{
         width: 3vw;
     }
     .phonebox:hover .link1 {
-        font-size: 1.4vw;
+        font-size: 2vw;
+    }
+    .namepage {
+       display: none;
+    }
+}
+@media (max-width: 450px) {
+    .logo {
+        width: 13vw;
+    }
+
+    .navmenu li {
+        font-size: 2.3vw;
+    }
+
+    .navmenu {
+        justify-content: space-around;
+        height: 12vw;
+    }
+
+    .arr {
+        height: 4vw;
+    }
+
+    .phonebox a {
+        font-size: 2.4vw;
+    }
+        .phonebox:hover .link2 {
+        font-size: 2.4vw !important;
+    }
+    .phone{
+        width: 4vw;
+    }
+    .phonebox:hover .link1 {
+        font-size: 2.4vw;
     }
     .namepage {
        display: none;
