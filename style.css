@@ -1113,33 +1113,49 @@ footer {
     .heroless {
         margin-left: 3.4vw;
     }
+    .hero-img{
+        margin-right: 3.4vw;
+    }
     .choosetext {
-        font-size: 2vw;
+        font-size: 4vw;
         font-weight: 400;
     }
     .aboutus{
-        flex-direction: column;
+        flex-direction:column-reverse;
     }
     .ourcasetext {
         font-size: 2vw;
         font-weight: 400;
     }
     .chooseus {
-        margin-left: 3.4vw;
-        width: 45%;
+        width: 92%;
+        margin:0 auto;
+        border: 1px solid red;
+        margin-top: 3vw;
+    }
+    .caseimg1,.caseimg2,.caseimg3{
+        height: 20vw;
+    }
+    .marg{
+        margin-top: 0;
     }
     .ourcase {
-        width: 78%;
+        width: 92%;
         margin:0 auto;
     }
     .str1{
-        font-size: 1.7vw;
-        
+        font-size: 3vw;
+        margin-top: 1vw;
+        line-height: 3vw;
     }
-
+    .str img,.str1 img{
+        height: 3vw;
+    }
     .str {
-        font-size: 1.7vw;
-        line-height: 1.5vw;
+        font-size: 3.3vw;
+         margin-top: 3vw;
+         line-height: 3vw;
+         white-space: nowrap;
     }
     .navmenu {
         justify-content: space-around;
