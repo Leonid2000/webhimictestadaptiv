@@ -1066,30 +1066,31 @@ footer {
 
     .navmenu {
         justify-content: space-around;
+        align-items: center;
         height: 12vw;
     }
 
     .arr {
-        height: 3vw;
+        height: 2vw;
     }
 
     .phonebox a {
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
         .phonebox:hover .link2 {
-        font-size: 2vw !important;
+        font-size: 1.7vw !important;
     }
     .phone{
         width: 3vw;
     }
     .phonebox:hover .link1 {
-        font-size: 2vw;
+        font-size: 1.7vw;
     }
     .namepage {
        display: none;
     }
 }
-@media (max-width: 450px) {
+@media (max-width: 750px) {
     .logo {
         width: 13vw;
     }
@@ -1100,11 +1101,12 @@ footer {
 
     .navmenu {
         justify-content: space-around;
+        align-items: center;
         height: 12vw;
     }
 
     .arr {
-        height: 4vw;
+        height: 3vw;
     }
 
     .phonebox a {
