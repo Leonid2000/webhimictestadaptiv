@@ -861,6 +861,8 @@ h1 {
 
 .bigimg {
     margin: 0 auto;
+    width: 50vw;
+    height: 100%;
 }
 
 .left {
@@ -1527,6 +1529,7 @@ footer {
     .left img,.right img{
         height: 4vw;
     }
+    
 }
 
 @media (max-width: 750px) {
