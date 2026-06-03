@@ -47,6 +47,7 @@ nav {
 
 .logo {
     width: 8vw;
+    border: 1px solid rgb(250, 5, 5);
 }
 
 .navmenu ul {
@@ -144,15 +145,18 @@ nav {
    ========================================================================== */
 .hero {
     background-color: #FCFCFC;
-    width: 100%;
+    width: 95%;
+    box-sizing: border-box;
+    max-width: 1470px;
     border: 0 solid black;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
 .heroless {
     background-color: #FCFCFC;
-    border: 0 solid rgb(250, 5, 5);
+    border: 1px solid rgb(250, 5, 5);
     width: 42%;
     display: flex;
     justify-content: flex-start;
@@ -1030,7 +1034,9 @@ footer {
     .navmenu {
         justify-content: space-around;
     }
-
+    .heroless{
+        margin-left:2.5vw;
+    }
     .arr {
         height: 1.3vw;
     }
@@ -1054,7 +1060,11 @@ footer {
     }
 
 }
-
+@media (max-width: 1200px) {
+      .heroless{
+        margin-left:2.5vw;
+    }
+}
 @media (max-width: 1000px) {
     .logo {
         width: 13vw;
@@ -1063,7 +1073,9 @@ footer {
     .navmenu li {
         font-size: 2vw;
     }
-
+    .heroless{
+        margin-left:3.4vw;
+    }
     .navmenu {
         justify-content: space-around;
         align-items: center;
@@ -1090,6 +1102,7 @@ footer {
        display: none;
     }
 }
+
 @media (max-width: 750px) {
     .logo {
         width: 13vw;
@@ -1104,7 +1117,9 @@ footer {
         align-items: center;
         height: 12vw;
     }
-
+  .heroless{
+        margin-left:2vw;
+    }
     .arr {
         height: 3vw;
     }
