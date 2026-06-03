@@ -377,8 +377,11 @@ nav {
 .offer-block {
     display: flex;
     justify-content: center;
-    border: 0 solid red;
-    padding: 5.2vw 11.6vw;
+    border: 1px solid red;
+    width: 92%;
+    max-width: 1470px;
+    margin: 0 auto;
+    margin-top: 5%;
 }
 
 .ourserv {
@@ -386,7 +389,10 @@ nav {
     color: white;
     border-radius: 1vw;
     padding: 0.1% 0.7%;
-    background: linear-gradient(to right bottom, #023E4C, #02757C)
+    background: linear-gradient(to right bottom, #023E4C, #02757C);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .ourservtext {
@@ -396,7 +402,7 @@ nav {
 }
 
 .services {
-    font-size: 0.8vw;
+    font-size: 1vw;
 }
 
 .price {
@@ -405,7 +411,7 @@ nav {
     background: linear-gradient(to right, #014752, #489F8B);
     color: white;
     border-radius: 1vw;
-    padding: 0.1% 0.7%;
+    padding: 0.1% 1% 2% 1%;
 }
 
 .price-h {
@@ -482,7 +488,7 @@ nav {
     border-radius: 0.7vw;
     font-size: 1.1vw;
     text-align: center;
-    margin-top: 20%;
+    margin-top: auto;
     padding: 3%;
     transition: all 0.5s ease;
 }
@@ -505,6 +511,7 @@ nav {
 .pricename {
     font-size: 1.3vw;
     font-weight: 600;
+    margin-top: 0;
 }
 
 .price section {
@@ -516,9 +523,13 @@ nav {
     background-color: white;
     color: #025B65;
     width: 27%;
-    padding: 0 2% 2%;
+    padding: 2% 2% 2%;
     border-radius: 1vw;
     transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
 }
 
 .card:hover {
@@ -528,7 +539,7 @@ nav {
 .cardstr1 {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 1vw;
 }
 
@@ -557,10 +568,10 @@ nav {
     background-color: #016370;
     text-align: center;
     margin: 0 auto;
-    margin-top: 12%;
     padding: 5%;
     border-radius: 0.7vw;
     font-size: 1vw;
+    margin-top: 10%;
     color: white;
     transition: all 0.5s ease;
 }
@@ -1098,7 +1109,24 @@ footer {
     .phonebox:hover .link1 {
         font-size: 1.2vw;
     }
-
+    .services{
+        font-size: 1.2vw;
+    }
+    .ourservtext{
+        font-size: 1.4vw;
+    }
+    .price-h{
+        font-size: 1.4vw;
+    }
+    .pricename{
+        font-size: 1.5vw;
+    }
+    .cardtext{
+        font-size: 1.2vw;
+    }
+     .str img,.str1 img{
+        height: 1.7vw;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -1135,9 +1163,6 @@ footer {
     }
     .caseimg1,.caseimg2,.caseimg3{
         height: 20vw;
-    }
-    .marg{
-        margin-top: 0;
     }
     .ourcase {
         width: 92%;
@@ -1186,6 +1211,30 @@ footer {
     .namepage {
         display: none;
     }
+    .offer-block{
+        flex-direction: column;
+    }
+    .ourserv{
+        width: 94%;
+        margin:0 auto;
+    }
+    .ourservtext{
+        font-size: 3vw;
+    }
+    .services{
+        font-size: 3vw;
+        line-height: 4vw;
+    }
+    .str img,.str1 img{
+        height: 4vw;
+    }
+    .servicebut{
+        margin-top: 4vw;
+        font-size: 3vw;
+    }
+    .anservice{
+        font-size: 2vw;
+    }
 }
 
 @media (max-width: 750px) {
@@ -1222,7 +1271,13 @@ footer {
         font-size: 1.8vw;
         border-radius: 0.6vw;
     }
-
+    .casename{
+        font-size: 2vw;
+    }
+    .caseinfo span{
+        font-size: 1.5vw;
+    }
+   
     .navmenu {
         justify-content: space-around;
         align-items: center;
