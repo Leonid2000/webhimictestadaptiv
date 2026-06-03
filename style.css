@@ -152,7 +152,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    height:auto;
+    height: auto;
 }
 
 .heroless {
@@ -163,7 +163,7 @@ nav {
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
-    
+
 }
 
 .hero-but:hover {
@@ -175,7 +175,7 @@ nav {
     font-weight: 500;
     font-family: 'Golos Text', sans-serif;
     border: 0 solid yellow;
-    width: 64%;
+    width: 80%;
 }
 
 .sel {
@@ -211,8 +211,7 @@ nav {
 }
 
 .hero-but {
-    width: 40%;
-    height: 3.5vw;
+    width: 43%;
     padding: 1vw;
     display: flex;
     justify-content: center;
@@ -221,7 +220,7 @@ nav {
     font-family: 'Golos Text', sans-serif;
     background-color: #016370;
     color: white;
-    border-radius: 0.7vw;
+    border-radius: 0.4vw;
     font-weight: 100;
     transition: all 0.5s ease;
 }
@@ -232,19 +231,40 @@ nav {
 .aboutus {
     display: flex;
     justify-content: space-between;
-    border: 0px solid gray;
-    padding: 5.2vw 11.6vw;
+    border: 1px solid gray;
+    width: 95%;
+    max-width: 1470px;
+    margin: 0 auto;
 }
 
 .chooseus {
     font-size: 1vw;
-    border: 0px solid yellow;
+    border: 1px solid yellow;
 }
 
 .choosetext {
     font-size: 1.6vw;
     font-weight: 600;
     padding-bottom: 5%;
+}
+
+.ourcase {
+    border: 0px solid blue;
+    width: 74%;
+}
+
+.ourcase section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 0px solid orange
+}
+
+.ourcasetext {
+    font-size: 1.6vw;
+    font-weight: 600;
+    border: 0px solid black;
+    text-align: center;
 }
 
 .str {
@@ -351,24 +371,6 @@ nav {
     color: white !important;
 }
 
-.ourcase {
-    border: 0px solid blue;
-    width: 74%;
-}
-
-.ourcase section {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    border: 0px solid orange
-}
-
-.ourcasetext {
-    font-size: 1.6vw;
-    font-weight: 600;
-    border: 0px solid black;
-    text-align: center;
-}
 
 /* ==========================================================================
    5. УСЛУГИ, ЦЕНЫ И ФОРМА (OFFER-BLOCK)
@@ -1035,9 +1037,31 @@ footer {
     .navmenu {
         justify-content: space-around;
     }
-    .heroless{
-        margin-left:2.5vw;
+
+    .heroless {
+        margin-left: 2.5vw;
     }
+
+    .chooseus {
+        margin-left: 2.5vw;
+    }
+
+    .ourcase {
+        width: 71%;
+    }
+
+    .casename {
+        font-size: 1vw;
+    }
+
+    .caseinfo span {
+        font-size: 1vw;
+    }
+
+    .casebut {
+        width: 15vw;
+    }
+
     .arr {
         height: 1.3vw;
     }
@@ -1070,9 +1094,15 @@ footer {
     .navmenu li {
         font-size: 2vw;
     }
-    .heroless{
-        margin-left:3.4vw;
+
+    .heroless {
+        margin-left: 3.4vw;
     }
+
+    .chooseus {
+        margin-left: 3.4vw;
+    }
+
     .navmenu {
         justify-content: space-around;
         align-items: center;
@@ -1086,17 +1116,21 @@ footer {
     .phonebox a {
         font-size: 1.7vw;
     }
-        .phonebox:hover .link2 {
+
+    .phonebox:hover .link2 {
         font-size: 1.7vw !important;
     }
-    .phone{
+
+    .phone {
         width: 3vw;
     }
+
     .phonebox:hover .link1 {
         font-size: 1.7vw;
     }
+
     .namepage {
-       display: none;
+        display: none;
     }
 }
 
@@ -1108,34 +1142,43 @@ footer {
     .navmenu li {
         font-size: 2.3vw;
     }
-    .main-text{
+
+    .main-text {
         width: 35vw;
         font-size: 3vw;
     }
-    .hero-img{
+
+    .hero-img {
         width: 45vw;
         height: 45vw;
     }
-    .hero-text{
+
+    .hero-text {
         width: 45vw;
         font-size: 2vw;
     }
-    .hero-ul{
+
+    .hero-ul {
         font-size: 2vw;
         white-space: nowrap;
     }
-    .hero-but{
+
+    .hero-but {
         width: 38vw;
         font-size: 1.8vw;
+        border-radius: 0.6vw;
     }
+
     .navmenu {
         justify-content: space-around;
         align-items: center;
         height: 12vw;
     }
-  .heroless{
-        margin-left:2vw;
+
+    .heroless {
+        margin-left: 2vw;
     }
+
     .arr {
         height: 3vw;
     }
@@ -1143,16 +1186,20 @@ footer {
     .phonebox a {
         font-size: 2.4vw;
     }
-        .phonebox:hover .link2 {
+
+    .phonebox:hover .link2 {
         font-size: 2.4vw !important;
     }
-    .phone{
+
+    .phone {
         width: 4vw;
     }
+
     .phonebox:hover .link1 {
         font-size: 2.4vw;
     }
+
     .namepage {
-       display: none;
+        display: none;
     }
 }
