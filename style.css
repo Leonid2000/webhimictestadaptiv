@@ -951,6 +951,7 @@ h1 {
    8. ПОДВАЛ САЙТА (FOOTER)
    ========================================================================== */
 footer {
+    display: flex;
     margin: 0 auto;
     margin-top: 5.2vw;
     padding-top: 2%;
@@ -960,12 +961,20 @@ footer {
 
 .footer-info {
     display: flex;
-    width: 77%;
+    width: 94%;
+    max-width: 1470px;
     margin: 0 auto;
-    border: 0 solid red;
+    border: 1px solid red;
 }
 
 .footer-textinfo {
+    border: 0 solid rgb(51, 255, 0);
+    color: #999999;
+    font-size: 1.3vw;
+    width: 40%;
+}
+
+.footer-artprojbox {
     border: 0 solid rgb(51, 255, 0);
     color: #999999;
     font-size: 1.3vw;
@@ -997,6 +1006,12 @@ footer {
 
 .footer-contact {
     width: 60%;
+}
+
+.artandproj {
+    font-size: 1vw;
+    color: white;
+    font-weight: 600;
 }
 
 .footphonebox {
@@ -1504,13 +1519,16 @@ footer {
         margin: 0 auto;
         max-height: 1470px;
     }
-    .projname{
+
+    .projname {
         font-size: 3vw;
     }
-    .projinfo{
+
+    .projinfo {
         font-size: 2vw;
     }
-    .projbut{
+
+    .projbut {
         font-size: 2vw;
         width: 30vw;
     }
@@ -1526,10 +1544,88 @@ footer {
     .left {
         padding-left: 0;
     }
-    .left img,.right img{
+
+    .left img,
+    .right img {
         height: 4vw;
     }
-    
+
+    .comptext {
+        margin-top: 5vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    .cltext {
+        width: 100%;
+        font-size: 2vw;
+        margin-top: 7vw;
+    }
+
+    .footer-info {
+        width: 88%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-textinfo {
+        width: 30%;
+        font-size: 2vw;
+        border: 1px solid green;
+    }
+
+    .footer-textinfo ul {
+        font-size: 1.5vw;
+    }
+
+    .footer-textinfo li {
+        width: 100%;
+        margin-top: 1.6vw;
+        line-height: 2.3vw;
+        border: 1px solid red;
+    }
+
+    .artandproj {
+        font-size: 1.8vw;
+        border: 1px solid red;
+        padding-top:auto;
+    }
+    .footer-artprojbox{
+        width: 30%;
+        font-size: 2vw;
+        border: 1px solid green;
+        margin-bottom: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .email {
+        font-size: 1.8vw;
+    }
+
+    .mapmark {
+        font-size: 1.8vw;
+    }
+
+    .phonefoot {
+        font-size: 2vw !important;
+    }
+
+    .iconph {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .socialbox {
+        height: auto;
+        margin-top: 3vw;
+    }
+
+    .social {
+        width: 5vw;
+        height: 5vw;
+    }
 }
 
 @media (max-width: 750px) {
