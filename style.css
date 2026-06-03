@@ -1,10 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/golos-text');
+
 .noselect {
-  -webkit-user-select: none; /* Chrome/Safari */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE/Edge */
-  user-select: none; /* Стандартный синтаксис */
+    -webkit-user-select: none;
+    /* Chrome/Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE/Edge */
+    user-select: none;
+    /* Стандартный синтаксис */
 }
+
 body {
     margin: 0 auto;
     background-color: white;
@@ -250,11 +256,13 @@ nav {
     margin-top: 1.5vw;
 }
 
-.str img, .str1 img {
+.str img,
+.str1 img {
     height: 1.5vw;
 }
 
-.str p, .str1 p {
+.str p,
+.str1 p {
     margin: 0 auto;
     margin-left: 0.5vw;
     width: 80%;
@@ -268,14 +276,18 @@ nav {
     font-size: 1vw;
 }
 
-.caseimg1, .caseimg2, .caseimg3 {
+.caseimg1,
+.caseimg2,
+.caseimg3 {
     width: 100%;
     border-top-right-radius: 1vw;
     border-top-left-radius: 1vw;
     height: 10vw;
 }
 
-.caseimg1 img, .caseimg2 img, .caseimg3 img {
+.caseimg1 img,
+.caseimg2 img,
+.caseimg3 img {
     width: 100%;
     height: 100%;
     border-bottom: 0.06vw solid #CACACA;
@@ -733,7 +745,13 @@ h1 {
     display: none;
 }
 
-.compcase1, .compcase2, .compcase3, .compcase4, .compcase5, .compcase6, .compcase7 {
+.compcase1,
+.compcase2,
+.compcase3,
+.compcase4,
+.compcase5,
+.compcase6,
+.compcase7 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -761,17 +779,20 @@ h1 {
     margin: 0 auto;
 }
 
-.left, .right {
+.left,
+.right {
     align-self: center;
     width: 5%;
     height: 14%;
 }
 
-.left:hover img, .right:hover img {
+.left:hover img,
+.right:hover img {
     border: 0.06vw solid black;
 }
 
-.left img, .right img {
+.left img,
+.right img {
     border-radius: 3.2vw;
     width: 100%;
     height: 100%;
@@ -798,16 +819,16 @@ h1 {
 .slider {
     width: 77%;
     margin: 3% auto 0 auto;
-    overflow-x: auto; 
-    white-space: nowrap; 
-    scrollbar-width: none; 
-    scroll-behavior: smooth; 
-    display: flex;         
-    justify-content: space-between; 
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-between;
 }
 
 .slider::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
 
 .slider.active {
@@ -815,21 +836,21 @@ h1 {
 }
 
 .slide-item {
-    display: inline-flex;  
-    align-items: center;   
-    justify-content: center; 
-    width: 20%;         
-    min-width: 20%;     
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    min-width: 20%;
     height: 6.5vw;
     box-sizing: border-box;
-    padding: 0;    
+    padding: 0;
     user-select: none;
 }
 
 .slider img {
     width: 7.8vw;
     height: 3.2vw;
-    object-fit: contain; 
+    object-fit: contain;
     pointer-events: none;
 }
 
@@ -959,7 +980,9 @@ footer {
     align-items: center;
 }
 
-.vk, .tg, .wp {
+.vk,
+.tg,
+.wp {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -987,7 +1010,9 @@ footer {
     background-image: url(wp.png);
 }
 
-.social a:hover .vk, .social a:hover .tg, .social a:hover .wp {
+.social a:hover .vk,
+.social a:hover .tg,
+.social a:hover .wp {
     opacity: 1;
 }
 
@@ -996,45 +1021,72 @@ footer {
     height: 100%;
     opacity: 0.5;
 }
+
 @media (max-width: 1500px) {
-    .navmenu li{
+    .navmenu li {
         font-size: 1.3vw;
     }
-    .navmenu{
+
+    .navmenu {
         justify-content: space-around;
     }
-    .arr{
+
+    .arr {
         height: 1.3vw;
     }
-    .phonebox a{
+
+    .phonebox a {
         font-size: 1.2vw;
     }
-    .namepage{
+
+    .namepage {
         width: auto;
         white-space: nowrap;
         font-size: 1vw;
     }
-}
-@media (max-width: 1000px) {
-    .logo{
-        width: 13vw;
+
+    .phonebox:hover .link2 {
+        font-size: 1.2vw !important;
     }
-    .navmenu li{
-        font-size: 1.5vw;
-    }
-    .navmenu{
-        justify-content: space-around;
-        height: 7vw;
-    }
-    .arr{
-        height: 1.3vw;
-    }
-    .phonebox a{
+
+    .phonebox:hover .link1 {
         font-size: 1.2vw;
     }
-    .namepage{
+
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        width: 13vw;
+    }
+
+    .navmenu li {
+        font-size: 1.5vw;
+    }
+
+    .navmenu {
+        justify-content: space-around;
+        height: 9vw;
+    }
+
+    .arr {
+        height: 1.7vw;
+    }
+
+    .phonebox a {
+        font-size: 1.4vw;
+    }
+        .phonebox:hover .link2 {
+        font-size: 1.4vw !important;
+    }
+
+    .phonebox:hover .link1 {
+        font-size: 1.4vw;
+    }
+    .namepage {
         width: auto;
         white-space: nowrap;
         font-size: 1.3vw;
+        padding: 1.3vw;
     }
 }
