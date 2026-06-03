@@ -148,10 +148,11 @@ nav {
     width: 95%;
     box-sizing: border-box;
     max-width: 1470px;
-    border: 0 solid black;
+    border: 1px solid black;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    height:auto;
 }
 
 .heroless {
@@ -162,7 +163,7 @@ nav {
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
-    height: 25vw;
+    
 }
 
 .hero-but:hover {
@@ -1060,11 +1061,7 @@ footer {
     }
 
 }
-@media (max-width: 1200px) {
-      .heroless{
-        margin-left:2.5vw;
-    }
-}
+
 @media (max-width: 1000px) {
     .logo {
         width: 13vw;
@@ -1111,7 +1108,26 @@ footer {
     .navmenu li {
         font-size: 2.3vw;
     }
-
+    .main-text{
+        width: 35vw;
+        font-size: 3vw;
+    }
+    .hero-img{
+        width: 45vw;
+        height: 45vw;
+    }
+    .hero-text{
+        width: 45vw;
+        font-size: 2vw;
+    }
+    .hero-ul{
+        font-size: 2vw;
+        white-space: nowrap;
+    }
+    .hero-but{
+        width: 38vw;
+        font-size: 1.8vw;
+    }
     .navmenu {
         justify-content: space-around;
         align-items: center;
