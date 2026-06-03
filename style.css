@@ -239,7 +239,6 @@ nav {
 
 .chooseus {
     font-size: 1vw;
-    border: 1px solid yellow;
 }
 
 .choosetext {
@@ -1041,7 +1040,9 @@ footer {
     .heroless {
         margin-left: 2.5vw;
     }
-
+    .choosetext{
+        font-weight: 400;
+    }
     .chooseus {
         margin-left: 2.5vw;
     }
@@ -1049,11 +1050,25 @@ footer {
     .ourcase {
         width: 71%;
     }
-
-    .casename {
-        font-size: 1vw;
+    .ourcasetext{
+        font-weight: 400;
     }
-
+    .str1{
+        font-size: 1.4vw;
+        align-items: flex-start;
+        line-height: 1.4vw;
+    }
+    .str{
+        font-size: 1.4vw;
+        align-items: flex-start;
+        line-height: 1.4vw;
+    }
+    .casename {
+        font-size: 1.4vw;
+    }
+    .marg{
+        margin-top: 1.7vw;
+    }
     .caseinfo span {
         font-size: 1vw;
     }
@@ -1098,11 +1113,34 @@ footer {
     .heroless {
         margin-left: 3.4vw;
     }
-
+    .choosetext {
+        font-size: 2vw;
+        font-weight: 400;
+    }
+    .aboutus{
+        flex-direction: column;
+    }
+    .ourcasetext {
+        font-size: 2vw;
+        font-weight: 400;
+    }
     .chooseus {
         margin-left: 3.4vw;
+        width: 45%;
+    }
+    .ourcase {
+        width: 78%;
+        margin:0 auto;
+    }
+    .str1{
+        font-size: 1.7vw;
+        
     }
 
+    .str {
+        font-size: 1.7vw;
+        line-height: 1.5vw;
+    }
     .navmenu {
         justify-content: space-around;
         align-items: center;
