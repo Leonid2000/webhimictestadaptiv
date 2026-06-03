@@ -34,7 +34,6 @@ nav {
 }
 
 .navmenu {
-    border: 0.1vw solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,14 +46,13 @@ nav {
 
 .logo {
     width: 8vw;
-    border: 1px solid rgb(250, 5, 5);
+    border: 0px solid rgb(250, 5, 5);
 }
 
 .navmenu ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    border: 0.1vw solid green;
     gap: 2vw;
     padding-left: 0;
     margin-left: 0;
@@ -68,7 +66,6 @@ nav {
 .navmenu li {
     font-size: 1vw;
     text-wrap: nowrap;
-    border: 0.1vw solid red;
     transition: all 0.5s ease;
 }
 
@@ -145,10 +142,21 @@ nav {
    ========================================================================== */
 .hero {
     background-color: #FCFCFC;
-    width: 95%;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: auto;
+}
+
+.hero-main {
+    background-color: #FCFCFC;
+    width: 94%;
     box-sizing: border-box;
     max-width: 1470px;
-    border: 1px solid black;
+    border: 0px solid black;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -157,7 +165,7 @@ nav {
 
 .heroless {
     background-color: #FCFCFC;
-    border: 1px solid rgb(250, 5, 5);
+    border: 0px solid rgb(250, 5, 5);
     width: 42%;
     display: flex;
     justify-content: flex-start;
@@ -231,7 +239,7 @@ nav {
 .aboutus {
     display: flex;
     justify-content: space-between;
-    border: 1px solid gray;
+    border: 0px solid gray;
     width: 95%;
     max-width: 1470px;
     margin: 0 auto;
@@ -378,7 +386,7 @@ nav {
 .offer-block {
     display: flex;
     justify-content: center;
-    border: 1px solid red;
+    border: 0px solid red;
     width: 92%;
     max-width: 1470px;
     margin: 0 auto;
@@ -488,7 +496,7 @@ nav {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 .servicebut {
@@ -613,7 +621,7 @@ h1 {
 
 .linedev img {
     width: 100%;
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 .additional {
@@ -624,20 +632,18 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .additcard {
-    margin-top: 5%;
-    width: 30%;
-    height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin-top: 30px;
+    width: 31%;
     background-color: #025A65AD;
-    padding-bottom: 1%;
     border-radius: 1.3vw;
     border: 0.2vw solid #9CA3A4;
-    box-shadow: 0px 0px 3.8vw -2.2vw rgba(34, 60, 80, 0.88);
+    padding-bottom: 20px;
 }
 
 .additname {
@@ -645,6 +651,7 @@ h1 {
     justify-content: flex-end;
     align-items: center;
 }
+
 
 .additname p {
     width: 70%;
@@ -658,13 +665,11 @@ h1 {
 }
 
 .additinfo {
-    font-size: 0.9vw;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    height: 15vw;
-    font-weight: 100 !important;
+    justify-content: flex-start;
+    padding: 1vw;
 }
 
 .additstr {
@@ -672,6 +677,13 @@ h1 {
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 1vw;
+    padding-left: 2vw;
+}
+
+.additstr1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
     padding-left: 2vw;
 }
 
@@ -685,13 +697,19 @@ h1 {
     width: 80%;
 }
 
+.additstr1 p {
+    margin: 0 auto;
+    margin-left: 0.5vw;
+    width: 80%;
+}
+
 .additbut {
     width: 80%;
     border: 1px solid #378991;
     background-color: #016370;
     text-align: center;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: auto;
     padding: 5%;
     border-radius: 0.7vw;
     font-size: 1vw;
@@ -848,11 +866,16 @@ h1 {
     height: 100%;
     top: 0;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .imgclose {
     font-size: 4vw;
     transition: all 0.3s ease;
+    position: fixed;
+    right:0;
+    top:0;
 }
 
 .imgclose:hover {
@@ -860,9 +883,8 @@ h1 {
 }
 
 .bigimg {
-    margin: 0 auto;
     width: 50vw;
-    height: 100%;
+    height: 40%;
 }
 
 .left {
@@ -964,7 +986,7 @@ footer {
     width: 94%;
     max-width: 1470px;
     margin: 0 auto;
-    border: 1px solid red;
+    border: 0px solid red;
 }
 
 .footer-textinfo {
@@ -1053,11 +1075,12 @@ footer {
 
 .mapmarkbox {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     color: white;
     font-size: 1.1vw;
     margin-top: 1.2vw;
     font-weight: 300;
+    line-height: 1vw;
 }
 
 .socialbox {
@@ -1162,12 +1185,12 @@ footer {
     .str1 {
         font-size: 1.4vw;
         align-items: flex-start;
-        line-height: 1.9vw;
+        line-height: 1.4vw;
     }
 
     .str {
         font-size: 1.4vw;
-        align-items: center;
+        align-items: flex-start;
         line-height: 1.5vw;
     }
 
@@ -1237,7 +1260,7 @@ footer {
 
     .str img,
     .str1 img {
-        height: 1.7vw;
+        height: 1.6vw;
     }
 
     .contact {
@@ -1260,6 +1283,14 @@ footer {
 
     .additname p {
         font-size: 1.5vw;
+    }
+
+    .additstr {
+        line-height: 1.5vw;
+    }
+
+    .additstr img {
+        height: 1.8vw;
     }
 
     .additinfo {
@@ -1323,7 +1354,7 @@ footer {
     .chooseus {
         width: 92%;
         margin: 0 auto;
-        border: 1px solid red;
+        border: 0px solid red;
         margin-top: 3vw;
     }
 
@@ -1341,7 +1372,7 @@ footer {
     .str1 {
         font-size: 3vw;
         margin-top: 2vw;
-        line-height: 3vw;
+        line-height: 4vw;
     }
 
     .str img,
@@ -1352,7 +1383,7 @@ footer {
     .str {
         font-size: 3.3vw;
         margin-top: 2vw;
-        line-height: 3vw;
+        line-height: 4vw;
         white-space: nowrap;
     }
 
@@ -1364,6 +1395,10 @@ footer {
 
     .arr {
         height: 2vw;
+    }
+
+    .marg {
+        margin-top: auto;
     }
 
     .phonebox a {
@@ -1481,7 +1516,6 @@ footer {
 
     .additname p {
         font-size: 2.3vw;
-        border: 1px solid black;
     }
 
     .additname img {
@@ -1492,9 +1526,18 @@ footer {
         font-size: 1.5vw;
     }
 
+    .additstr {
+        line-height: 1.9vw;
+    }
+
+    .additinfomarg {
+        margin-top: 1.2vw;
+    }
+
     .additstr img {
         height: 2vw;
     }
+
 
     .additbut {
         margin-top: 5vw;
@@ -1573,7 +1616,6 @@ footer {
     .footer-textinfo {
         width: 30%;
         font-size: 2vw;
-        border: 1px solid green;
     }
 
     .footer-textinfo ul {
@@ -1584,22 +1626,24 @@ footer {
         width: 100%;
         margin-top: 1.6vw;
         line-height: 2.3vw;
-        border: 1px solid red;
     }
 
     .artandproj {
         font-size: 1.8vw;
-        border: 1px solid red;
-        padding-top:auto;
+        padding-top: auto;
     }
-    .footer-artprojbox{
+
+    .footer-artprojbox {
         width: 30%;
         font-size: 2vw;
-        border: 1px solid green;
-        margin-bottom: 5vw;
-        display: flex;
-        flex-direction: column;
+        margin-bottom: 9.8vw;
+
     }
+
+    .mapmarkbox {
+        line-height: 1.8vw;
+    }
+
     .email {
         font-size: 1.8vw;
     }
@@ -1661,6 +1705,10 @@ footer {
         width: 38vw;
         font-size: 1.8vw;
         border-radius: 0.6vw;
+    }
+
+    .marg {
+        margin-top: 2.5vw;
     }
 
     .casename {
