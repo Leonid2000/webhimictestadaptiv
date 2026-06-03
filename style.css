@@ -1061,32 +1061,31 @@ footer {
     }
 
     .navmenu li {
-        font-size: 1.5vw;
+        font-size: 2vw;
     }
 
     .navmenu {
         justify-content: space-around;
-        height: 9vw;
+        height: 12vw;
     }
 
     .arr {
-        height: 1.7vw;
+        height: 2vw;
     }
 
     .phonebox a {
-        font-size: 1.4vw;
+        font-size: 1.8vw;
     }
         .phonebox:hover .link2 {
         font-size: 1.4vw !important;
     }
-
+    .phone{
+        width: 3vw;
+    }
     .phonebox:hover .link1 {
         font-size: 1.4vw;
     }
     .namepage {
-        width: auto;
-        white-space: nowrap;
-        font-size: 1.3vw;
-        padding: 1.3vw;
+       display: none;
     }
 }
