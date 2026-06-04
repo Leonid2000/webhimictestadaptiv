@@ -585,7 +585,7 @@ nav {
 
 .pricebut {
     width: 80%;
-    border: 0.06vw solid #378991;
+    border: 1px solid #378991;
     background-color: #016370;
     text-align: center;
     margin: 0 auto;
@@ -596,7 +596,10 @@ nav {
     color: white;
     transition: all 0.5s ease;
 }
-
+.pricebut a {
+    color: white;
+    text-decoration: none;
+}
 .pricebut:hover {
     background-color: #0DA3B7;
 }
@@ -988,6 +991,7 @@ footer {
     max-width: 1470px;
     margin: 0 auto;
     border: 0px solid red;
+    padding-bottom: 3%;
 }
 
 .footer-textinfo {
@@ -1017,7 +1021,7 @@ footer {
 }
 
 .footer-textinfo ul {
-    font-size: 1vw;
+    font-size: 0.8vw;
     list-style: none;
     padding-left: 0;
     margin-left: 0;
@@ -1168,7 +1172,7 @@ footer {
 }
 
 .footer-license {
-    border: 0 solid red;
+    border-top: 0.1px solid rgba(155, 155, 155, 0.363);
     width: 92%;
     margin: 0 auto;
     max-width: 1470px;
