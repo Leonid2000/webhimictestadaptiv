@@ -874,8 +874,8 @@ h1 {
     font-size: 4vw;
     transition: all 0.3s ease;
     position: fixed;
-    right:0;
-    top:0;
+    right: 0;
+    top: 0;
 }
 
 .imgclose:hover {
@@ -883,8 +883,8 @@ h1 {
 }
 
 .bigimg {
-    width: 50vw;
-    height: 40%;
+    width: 35vw;
+    height: 45%;
 }
 
 .left {
@@ -979,6 +979,7 @@ footer {
     padding-top: 2%;
     background-color: #1B1B1B;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .footer-info {
@@ -1021,21 +1022,34 @@ footer {
     padding-left: 0;
     margin-left: 0;
 }
+.footer-textinfo a {
+    text-decoration: none;
+    color: white;
+}
 
 .footer-textinfo li {
     padding-top: 0.7vw;
 }
+.footer-textinfo li a{
+    text-decoration: none;
+    color: #999999;
+}
 
 .footer-contact {
+    border: 0 solid rgb(51, 255, 0);
     width: 60%;
 }
 
 .artandproj {
-    font-size: 1vw;
+    font-size: 1.3vw;
     color: white;
-    font-weight: 600;
+    font-weight: 300;
+    margin-top: 1.3vw;
 }
-
+.artandproj a{
+    text-decoration: none;
+    color: white;
+}
 .footphonebox {
     display: flex;
     align-items: center;
@@ -1077,7 +1091,7 @@ footer {
     display: flex;
     align-items: flex-start;
     color: white;
-    font-size: 1.1vw;
+    font-size: 0.9vw;
     margin-top: 1.2vw;
     font-weight: 300;
     line-height: 1vw;
@@ -1153,6 +1167,105 @@ footer {
     opacity: 0.5;
 }
 
+.footer-license {
+    border: 0 solid red;
+    width: 92%;
+    margin: 0 auto;
+    max-width: 1470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 0 4% 0;
+}
+
+.copyright {
+    color: #999999;
+    font-size: 0.9vw;
+}
+
+.alicense {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9vw;
+    line-height: 1.4vw;
+}
+
+.alicense a {
+    color: #999999;
+    text-decoration: none;
+    margin-left: 1vw;
+}
+
+.footer-svg {
+    border: 0 solid red;
+    display: flex;
+    display: flex-end;
+    align-items: center;
+}
+.cashcolor{
+    display: none;
+}
+.footer-svg img {
+    padding-left: 1vw;
+    width: 1.7vw;
+    height: 1.5vw;
+    border: 0 solid red;
+}
+.footer-textinfo a:hover{
+    color:white;
+}
+.phonefoot a{
+    color: white;
+    text-decoration: none;
+}
+.email a{
+    color: white;
+    text-decoration: none;
+}
+.phonefoot a:hover, .email a:hover{
+    color: #999999;
+}
+.foot-text a:hover{
+    color: #999999;
+}
+.artandproj a:hover{
+    color:#999999;
+}
+.alicense a:hover{
+    color: white;
+}
+.cash:hover{
+    content: url(cash.svg);
+}
+.master:hover{
+    content: url(master.svg);
+}
+.visa:hover{
+    content: url(visa.svg);
+}
+.sber:hover{
+    content: url(sber.svg);
+}
+.alpha:hover{
+    content: url(alpha.svg);
+}
+.mir:hover{
+    content: url(mir.svg);
+}
+.ymoney:hover{
+    content: url(ymoney.svg);
+}
+.x:hover{
+    content: url(x.svg);
+}
+.tbank:hover{
+    content: url(tbank.svg);
+}
+@media (max-width: 1680px) {
+    .footer-svg{
+        margin-right: 2.6vw;
+    }
+}
 @media (max-width: 1500px) {
     .navmenu li {
         font-size: 1.3vw;
@@ -1318,8 +1431,16 @@ footer {
         width: 15vw;
         font-size: 1.5vw;
     }
-}
 
+}
+@media (max-width: 1598px) {
+    .footer-info{
+        width: 92%;
+    }
+    .footer-svg{
+        margin-right: 3.7vw;
+    }
+}
 @media (max-width: 1000px) {
     .logo {
         width: 13vw;
@@ -1555,7 +1676,9 @@ footer {
     .trust-block {
         flex-direction: column;
     }
-
+    .bigimg{
+        height: 35%;
+    }
     .project {
         width: 92%;
         height: 20vw;
@@ -1670,6 +1793,17 @@ footer {
         width: 5vw;
         height: 5vw;
     }
+    .copyright{
+        font-size: 1.3vw;
+    }
+    .alicense{
+        font-size: 1.3vw;
+        line-height: 2.3vw;
+    }
+    .footer-svg img{
+        width: 1.8vw;
+        height: 1.8vw;
+    }
 }
 
 @media (max-width: 750px) {
@@ -1745,11 +1879,26 @@ footer {
         width: 4vw;
     }
 
+    .iconph {
+        width: 15px !important;
+        height: 10px !important;
+    }
+
     .phonebox:hover .link1 {
         font-size: 2.4vw;
     }
 
     .namepage {
         display: none;
+    }
+    .bigimg{
+        height: 25%;
+    }
+}
+
+@media (max-width: 500px) {
+    .iconph {
+        width: 8px !important;
+        height: 8px !important;
     }
 }
