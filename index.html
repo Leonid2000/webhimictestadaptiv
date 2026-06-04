@@ -142,7 +142,7 @@
                     <div class="cardstr"><img src="markgreen.png">
                         <p class="cardtext">Настройка 1С-Битрикс и модулей</p>
                     </div>
-                    <div class="pricebut">ВЫБРАТЬ</div>
+                    <div class="pricebut"><a href="#form">ВЫБРАТЬ</a></div>
                 </div>
                 <div class="card">
                     <p class="pricename">Малый бизнес</p>
@@ -159,7 +159,7 @@
                     <div class="cardstr"><img src="markgreen.png">
                         <p class="cardtext">Работа программиста до 5-ти часов</p>
                     </div>
-                    <div class="pricebut">ВЫБРАТЬ</div>
+                    <div class="pricebut"><a href="#form">ВЫБРАТЬ</a></div>
                 </div>
                 <div class="card">
                     <p class="pricename">Бизнес</p>
@@ -176,17 +176,17 @@
                     <div class="cardstr"><img src="markgreen.png">
                         <p class="cardtext">Верстка страниц и контент</p>
                     </div>
-                    <div class="pricebut">ВЫБРАТЬ</div>
+                    <div class="pricebut"><a href="#form">ВЫБРАТЬ</a></div>
                 </div>
             </section>
         </div>
         <div class="contact">
             <P id="form">Форма для консультации</P>
             <div class="form">
-                <input type="text" id="name" placeholder="Ваше имя">
-                <input type="text" id="phone" name="phone" placeholder="Телефон" required>
+                <input type="text" id="name" pattern="[A-Za-zА-Яа-яЁё\s]+" title="Пожалуйста, используйте только буквы и пробелы" placeholder="Ваше имя">
+                <input type="text" id="phone" name="phone" placeholder="+7 900 235 76 48" required>
                 <input type="email" id="email" placeholder="Почта">
-                <input class="mesop" type="text" placeholder="Сообщение для оператора">
+                <input class="mesop" id="mesop" type="text" placeholder="Сообщение для оператора">
             </div>
             <div class="but">
                 <button onclick="send()">ОТПРАВИТЬ ЗАЯВКУ</button>
