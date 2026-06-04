@@ -69,12 +69,6 @@ function closephoto() {
     photobox.style.display = "none"
 }
 
-
-
-
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
     let slider = document.querySelector(".slider");
     if (!slider) return;
@@ -84,14 +78,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function autoScroll() {
         let items = slider.querySelectorAll(".slide-item");
-        let maxSteps = items.length - 5; 
+        let maxSteps = items.length - 5;
 
         currentStep--;
 
         if (currentStep < 0) {
             currentStep = maxSteps;
         }
-        
+
         slider.scrollLeft = currentStep * items[0].offsetWidth;
     }
 
@@ -113,3 +107,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
     start();
 });
+
+
+function send() {
+    let name = document.getElementById("name")
+    let number = document.getElementById("phone").value
+    let email=document.getElementById("email")
+    let mesop=document.getElementById("mesop")
+    let nums = number.length
+    if (document.getElementById("name").value != "" && document.getElementById("email").value != "" && document.getElementById("mesop").value != "" && document.getElementById("phone").value != "") {
+        if (number.indexOf("+7") > -1 && nums==12) {
+            if(email.value.indexOf("@gmail.com") > -1 || email.value.indexOf("@yandex.ru") > -1 || email.value.indexOf("@yahoo.com") > -1 || email.value.indexOf("@outlook.com") > -1 || email.value.indexOf("@mail.ru") > -1 || email.value.indexOf("@") > -1){
+                alert("Спасибо за заявку! Мы свяжемся с вами в ближайшее время!")
+                name.value = ""
+                email.value = ""
+                mesop.value = ""
+                document.getElementById("phone").value = "" 
+            }
+            else{
+                alert("Введите почту с @")
+            }
+        }
+        else{
+            alert("Введите номер телефона в формате +79999999999!")
+        }
+    }
+
+ else {
+        alert("Заполните все поля!")
+    }
+}
